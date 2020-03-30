@@ -18,22 +18,22 @@
         $grade1 = $_GET["grade1"]; $grade2 = $_GET["grade2"];
         $final = (2*$grade1 + 3*$grade2)/5;
         if ($final>89){
-            print("Your final grade is $final. You got an A. Congratulations!");
+            printf("Your final grade is %.lf. You got an A. Congratulations!", $final);
         }
         else if ($final>79){
-            print("Your final grade is $final. You got a B.");
+            printf("Your final grade is %.lf. You got a B.", $final);
         }
         else if ($final>69){
-            print("Your final grade is $final. You got a C.");
+            printf("Your final grade is %.lf. You got a C.", $final);
         }
         else if ($final>59){
-            print("Your final grade is $final. You got a D.");
+            printf("Your final grade is %.lf. You got a D.", $final);
         }
         else if ($final>0){
-            print("Your final grade is $final. You got an F.");
+            printf("Your final grade is %.lf. You got an F.", $final);
         }
         else {
-            print("Illegal grade less than 0. Final grade = $final");
+            printf("Illegal grade less than 0. Final grade = %.lf.", $final);
         }
         ?>
     </body>
