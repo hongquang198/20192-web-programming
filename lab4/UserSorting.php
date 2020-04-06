@@ -15,6 +15,8 @@ $values = array('name' => 'Buzz Lightyear',
     'email_address' => 'buzz@starcommand.gal',
     'age' => 32,
     'smarts' => 'some');
+$submitted = $_POST['submitted'];
+$sort_type = $_POST['sort_type'];
 
 if ($submitted) {
     if ($sort_type == 'usort' || $sort_type == 'uksort' || $sort_type == 'uasort') {
@@ -23,6 +25,8 @@ if ($submitted) {
         $sort_type($values);
     }
 }
+
+
 ?>
 
 <form action="UserSorting.php" method="post">
